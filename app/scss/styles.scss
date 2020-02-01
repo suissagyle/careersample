@@ -1,0 +1,1997 @@
+@import "global";
+@import "mixins";
+@import "colors";
+@import "variables";
+
+
+
+/*************
+	HEADER
+*************/
+.main-slider {
+	margin-top: 20px;
+    padding: 35px 25px;
+    background: $grey;
+}
+
+
+/*****************
+	SECTION
+*****************/
+
+
+.sec1 {
+	h3 {
+		color: $pink;
+		font-size: 55px;
+		font-weight: 600;
+		text-align: center;
+	}
+	.pick-ups {
+		.picks {
+			padding-top: 30px;	
+			padding-bottom: 30px;	
+			display: table;
+			border-bottom: 1px solid;
+			&:last-child {
+				border-bottom:0;
+			}
+			.title {
+				width: 100%;
+				font-size: 24px;
+				font-weight: 600;
+				span {
+					color: #000;
+				    padding: 6px;
+				    font-weight: 500;
+				    border-radius: 0;
+				    background-color: #ffd801;
+				}
+			}
+			.left {
+				width: 55%;
+				float: left;
+				img {
+					width: 100%;
+				}
+			}
+			.right {
+				width: 45%;
+				float: left;
+				padding: 5px;
+				font-size: 18px;
+				.subtitle {
+					font-size: 18px;
+					font-weight: bold;
+				}
+				.yen {
+					width: 100%;
+					div {
+						width: 30px;
+					    height: 50px;
+					    float: left;
+					}
+				}
+				.time, .marker {
+					width: 100%;
+					clear: both;
+					div {
+						float: left;
+						width: 25px;
+						&.two {
+							height: 50px;
+						}
+					}
+				}
+				img {
+					width: 20px;
+				}
+			}
+			.tags {
+				width: 100%;
+				display: table;
+				margin-bottom: 5px;
+				li {
+					float: left;
+					color: $pink;
+					margin: 3px 3px 0 0;
+					padding: 2px 8px 0;
+    				font-size: 12px;
+					list-style: none;
+					border-radius: 5px;
+					border: 1px solid $pink;
+					&.block {
+						color: #fff;
+						background-color: $pink;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.sec2 {
+	padding: 0;
+	.seemore {
+		width: 120px;
+	    color: #000;
+	    font-size: 24px;
+	    font-weight: 600;
+	    margin: 0 auto;
+	    display: block;
+	    transition: all 0.5s;
+	    padding-bottom: 3px;
+	    margin-bottom: 40px;
+	    border-bottom: 2px solid #000;
+	    &:hover {
+	    	color: gray;
+	    	border-color: gray;
+	    	text-decoration: none;
+	    }
+	}
+}
+
+
+.sec3 {
+	padding: 0;
+	.points {
+		padding: 15px;
+		margin-top: 20px;
+		p {
+			span {
+				padding: 0 3px;
+				background-color: $yellow;
+			}
+		}
+		.mergetext {
+			margin-top: -12px;
+		}
+	}
+}
+
+
+.sec4 {
+	padding: 20px 15px;
+	h3 {
+		color: $black;
+		text-align: center;
+		font-weight: bold;
+	}
+	p {
+		color: #000;
+		margin-top: 10px;
+		line-height: 24px;
+	}
+}
+
+
+
+.sec5 {
+	padding: 50px 0 20px;
+    display: table;
+    
+	.title {
+		width: 100%;
+		height: auto;
+		padding: 5px;
+		background-color: $pink;
+		h3 {
+			color: #fff;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.weekly {
+		display: table;
+    	padding: 15px;
+    	background-color: rgb(229, 223, 220);
+		.week {
+			max-width: 60%;
+    		margin: 0 auto;
+			.day {
+				width: 35px;
+			    height: 35px;
+			    padding: 10px;
+			    color: $pink;
+			    display: table;
+			    text-align: center;
+			    font-size: 12px;
+			    font-weight: bold;
+			    border-radius: 50%;
+			    background: #fff;
+			    margin-bottom: -20px;
+			}
+			.blocks {
+				width: 96%;
+			    float: right;
+			    margin-bottom: -10px;
+			    padding-left: 25px;
+			    border-left: 10px solid #fff;
+			    &.last {
+			    	border-left: 10px solid transparent;
+			    }
+				.block {
+					width: 100%;
+					height: 80px;
+					padding: 10px;
+					display: table;
+    				margin-bottom: 20px;
+					background-color: #fff;
+					&.diff {
+						.time {
+							width: 100%;
+							color: #000;
+							font-size: 15px;
+							padding-bottom: 10px;
+							font-weight: bold;
+							img {
+								width: 15px;
+								margin-right: 5px;
+							}
+						}
+					}
+					.left {
+						width: 40%;
+						.time {
+							color: #000;
+							font-size: 16px;
+							padding-bottom: 10px;
+							font-weight: bold;
+							img {
+								width: 15px;
+								margin-right: 5px;
+							}
+						}
+					}
+					.right {
+						width: 60%;
+						padding-left: 5px;
+						.name {
+							color: #000;
+							font-size: 16px;
+							padding-bottom: 10px;
+							font-weight: bold
+						}
+						p {
+							font-size: 11px;
+						    margin-bottom: 5px;
+						    line-height: 13px;
+						    min-height: 60px;
+						    overflow-wrap: break-word;
+							&.big {
+								font-size: 13px;
+    							line-height: 16px;
+							}
+						}
+						a {
+							    float: none;
+							    width: 100%;
+							    margin: 0 auto;
+							    color: $pink;
+							    padding: 3px 5px;
+							    font-weight: 600;
+							    border-radius: 3px;
+							    border: 1px solid #E73B7B;
+							    background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+.seemore-pink {
+	color: #fff;
+	width: 120px;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	padding:  5px;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: $pink;
+}
+
+.seemore-blue {
+	color: #fff;
+	width: 120px;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	padding:  5px;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: $bluegreen;
+}
+
+.seemore-blue2 {
+	color: #fff;
+	width: 120px;
+	font-size: 20px;
+	margin: 0 auto;
+	display: block;
+	padding:  5px;
+	border-radius: 3px;
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: $skyblue;
+}
+
+.sec6 {
+	.steps {
+		margin-top: 10px;
+		.step {
+			width: 100%;
+			display: table;
+			.title {
+				width: 100%;
+				color: $pink;
+				font-size: 18px;
+				font-weight: bold;
+				img {
+					width: 70px;
+				}
+			}
+			.content {
+				button, a {
+					color: #fff;
+					margin: 0 auto;
+					border: $pink;
+					display: block;
+					max-width: 80px;
+					text-align: center;
+					background-color: $pink;
+				}
+				p {
+					padding: 0 5px;
+				}
+			}
+			.arrow {
+					width: 100%;
+				    height: 30px;
+				    display: table;
+				    padding-top: 10px;
+				img {
+					width: 25px;
+					margin: 0 auto;
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+.sec7 {
+	padding: 0;
+	h3 {
+		color: $pink;
+		padding: 10px;
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
+		margin: 0;
+	}
+	h4 {
+		font-size: 20px;
+		font-weight: 600;
+		color: $pink;
+		padding:0 15px;
+		margin-bottom: 10px;
+	}
+	img {
+		padding: 15px;
+	}
+	.divider {
+		width: 100%;
+		height: 30px;
+		background-color: #fff;
+	}
+	.interviews {
+		display: table;
+		background-color: $lightpink;
+		.interview {
+			.left {
+				width: 40%;
+			}
+			.right {
+				width: 60%;
+				font-size: 14px;
+				font-weight: 600;
+				padding-top: 30px;
+				span {
+					padding: 3px;
+					color: $pink;
+				}
+				.content {
+					padding: 3px;
+				}
+
+			}
+			.content {
+				width: 100%;
+				padding: 10px;
+				display: table;
+			}
+		}
+	}
+	.main {
+		padding: 0 10px 10px;
+	}
+	.lifestyle {
+		padding: 0 10px;
+		.lifes {
+			padding-top: 15px;
+			padding-bottom: 10px;
+			img {
+				padding: 0;
+				margin-top: -35px;
+			}
+			p {
+				font-size: 13px;
+				margin-top: 15px;
+				&.cols {
+					min-height: 70px;
+				}
+			}
+			span {
+				width: 50px;
+				height: 45px;
+				color: $pink;
+				float: left;
+				padding: 10px;
+				font-size: 16px;
+				background-color: #fff;
+				text-align: center;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+
+.sec8 {
+	padding: 60px 0;
+	background-color: #fff;
+	span {
+		color: red;
+	}
+	.regform {
+		padding: 15px;
+		margin-top: 10px;
+		display: table;
+		width: 100%;
+		background-color: rgb( 239, 236, 234);
+		p {
+			a {
+				color: #000;
+				border-bottom: 2px solid #000;
+			}
+		}
+		> div {
+			width: 100%;
+			&.bd {
+				width: 80%;
+			}
+			.full {
+				max-width: 280px;
+				&.select {
+					max-width: 100%;
+				}
+				select {
+					width: 100%;
+					padding: 0 5px;
+					margin-bottom: 4px;
+				}
+			}
+			.half {
+				max-width: 280px;
+				select {
+					width: 49%;
+					float: left;
+					&:first-child {
+					    padding: 0 5px;
+					    margin-right: 5px;
+					}
+				}
+			}
+			label {
+				color: #000;
+				width: 100%;
+				margin-top: 5px;
+				font-weight: 500;
+			}
+			input, select {
+				width: 100%;
+				height:35px;
+				padding: 5px;
+				color: #808080;
+				font-size: 15px;
+				padding: 3px;
+				border: 0;
+				background-color: #fff;
+			}
+			select {
+				width: 100px;
+				padding: 0 5px;
+				overflow: hidden;
+				overflow: -moz-hidden-unscrollable;
+				background: url(../images/select-arrow.png) no-repeat right white;
+				background-size: 30px;
+    			background-position: right;
+				display: inline-block;
+				position: relative;
+				-moz-appearance:none; /* Firefox */
+			    -webkit-appearance:none; /* Safari and Chrome */
+			    appearance:none;
+			}
+			textarea {
+				width: 100%;
+				color: #808080;
+				font-size: 14px;
+    			line-height: 20px;
+    			border: 0;
+			}
+			&.radio {
+				width: 90px;
+			    float: left;
+			    margin: 0 5px 10px;
+			    background-color: #fff;
+				label {
+					margin: 9px 0 6px;
+				    font-weight: 400;
+				    line-height: 18px;
+				    padding-left: 38px;
+				}
+				input {
+					outline: 0;
+					cursor: pointer;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
+					border: 5px solid $lightgrey;
+					border-radius: 50%;
+					width: 21px;
+					height: 21px;
+					float: left;
+					padding-left: -20px;
+					margin-top: -2px;
+    				margin-left: -33px;
+    				background-color: $lightgrey;
+				}
+				span {
+					color: #000;
+				}
+			}
+			.form-indent {
+				padding-left: 20px;
+				span {
+					float: left;
+					width: 20px;
+					padding-top: 10px;
+					color: #808080;
+				}
+				input {
+					float: left;
+				    width: 97%;
+				    margin-bottom: 5px;
+				}
+			}
+		}
+	}
+	input[type="radio"]:checked {
+		width: 23px;
+		height: 23px;
+		border-color: red !important;
+		background-color: #fff !important;
+	}
+}
+
+.divider {
+	width: 100%;
+	height: 30px;
+	background-color: #fff;
+}
+
+.sec9 {
+	width: 100%;
+	height: auto;
+	/*min-height: 500px;*/
+	padding: 20px;
+	background-image: url(../images/careerdirect-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	.info-box {
+		width: 100%;
+		height: auto;
+	    min-height: 100%;
+	    padding: 10px 10px 20px;
+	    background-color: rgba(255, 255, 255, 0.65);
+	    .container {
+		    width: 100%;
+		}
+	    img {
+	    	max-width: 200px;
+	    	margin: 0 auto;
+	    	display: block;
+	    }
+	    p {
+	    	padding: 10px;
+	    	color: #000;
+	    	font-size: 14px;
+	    	font-weight: 600;
+	    	line-height: 22px;
+	    	text-align: center;
+	    }
+	}
+}
+
+
+.panel-default>.panel-heading {
+    color: #fff;
+    padding: 0;
+    background-color: #e73b7b;
+    border-color: #e73b7b;
+}
+.panel-default {
+    border-color: none;
+}
+.panel-title > a {
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	padding: 10px 15px;
+	color: $pink;
+	transition: all 0.5s;
+	background-color: #fff;
+	&.collapsed {
+	    color: #fff;
+	    background: $pink;
+	}
+}
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+
+
+/************
+  CHAT BOX
+************/
+
+#easychat-floating-button {
+	margin-top: 20px;
+	margin-left: 15px;
+	float: left!important;
+	color: #fff !important;
+	width: 125px !important;
+    height: 30px!important;
+    font-size: 12px!important;
+    padding-top: 3px !important;
+	border-radius: 0 !important;
+	position: relative !important;
+	background-color: $pink !important;
+	&.easychat-float-botton-hide {
+	    display: block !important;
+	}
+	img {
+		float: left;
+		width: 30px!important;
+    	height: 25px !important;
+	}
+}
+
+.easychat-float-botton-hide {
+    display: block !important;
+}
+
+
+#easychat-chat-dialog {
+	left: 15px !important;
+}
+
+
+
+/***********
+ CONTACT US
+***********/
+
+.contactus {
+	.sec1 {
+		background-position: top right;
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-image: url(../images/contact-usbg.png);
+		h2 {
+			font-size: 30px;
+		    margin-bottom: 20px;
+		    font-weight: 600;
+		}
+		p {
+			max-width: 300px;
+		}
+		span {
+			color: $bluegreen;
+			max-width: 300px;
+		}
+	}
+	.sec8 {
+
+		padding: 60px 0 0;
+		.title {
+			width: 100%;
+			margin: 0 auto;
+			display: block;
+		}
+		.regform {
+			background-color: rgba(91, 170, 170, 0.20);
+			div {
+				label {
+					font-weight: 500;
+					small {
+						float: right;
+					    font-size: 11px;
+					    padding-top: 5px;
+					    font-weight: normal;
+					}
+				}
+			}
+			.form-indent {
+				padding-left: 5px;
+				div {
+					span {
+						color: $bluegreen;
+						font-weight: 500;
+						width: 60px;
+					}
+					input{
+						width: 90%;
+						font-size: 13px;
+					}
+				}
+				span {
+					width: 70px;
+					color: $bluegreen;
+					font-weight: 500;
+					padding-right: 2px;
+					text-align: right;
+				}
+				input {
+					width: 88.5%;
+				}
+			}
+			p {
+				margin-top: 20px;
+				span {
+					color: #000;
+					border-bottom: 2px solid;
+				}
+			}
+			.seemore-blue {
+				margin-top: 20px;
+			}
+			a {
+			    color: #000;
+			    cursor: pointer !important;
+			    font-weight: 500;
+			}
+		}
+	}
+}
+
+
+/***********
+ JOB OFFER
+***********/
+
+.joboffer {
+	.seemore-blue2 {
+		width: 160px;
+	    font-size: 15px;
+	    text-align: center;
+		img {
+			width: 20px;
+			float: left;
+			margin-left: 22px;
+		}
+	}
+	.sec1 {
+		position: fixed;
+	    margin-top: -30px;
+	    width: 100%;
+	    max-width: 750px;
+	    padding: 5px 15px 0;
+	    background: #fff;
+	}
+	.sec2 {
+		display: table;
+		margin-top: 50px;
+		
+		.jobs {
+			.job {
+				padding-top: 15px;	
+				display: block;
+				border-bottom: 1px solid;
+				&:last-child {
+					border-bottom:0;
+				}
+				.pin {
+					min-width: 70px;
+					padding: 2px 6px;
+					float: left;
+					text-align: center;
+					&.yellow {
+						background-color: $darkyellow;
+					}
+					&.green {
+						background-color: rgb(162, 228, 135);
+					}
+				}
+				.num {
+					float: right;
+					font-size: 12px;
+					padding: 3px 5px;
+					border-radius: 10px;
+					border: 1px solid;
+					text-align: center;
+				}
+				.title {
+					width: 100%;
+					clear: both;
+					display: block;
+					font-size: 20px;
+					font-weight: 600;
+					padding: 3px 0 0;
+					span {
+						color: #000;
+					    padding: 6px;
+					    font-weight: 500;
+					    border-radius: 0;
+					    background-color: #ffd801;
+					}
+				}
+				.full {
+					width: 100%;
+					font-size: 16px;
+					font-weight: normal;
+					img {
+						width: 20px;
+					}
+					.yen {
+						width: 100%;
+						div {
+							width: 30px;
+						    height: 50px;
+						    float: left;
+						}
+					}
+					.time, .marker {
+						width: 100%;
+						clear: both;
+						div {
+							float: left;
+							width: 25px;
+							&.two {
+								height: 50px;
+							}
+						}
+					}
+				}
+				.left {
+					width: 55%;
+					float: left;
+					img {
+						width: 100%;
+					}
+				}
+				.right {
+					width: 45%;
+					float: left;
+					padding: 5px;
+					font-size: 18px;
+					.subtitle {
+						font-size: 18px;
+						font-weight: bold;
+					}
+					.yen {
+						width: 100%;
+						div {
+							width: 30px;
+						    height: 50px;
+						    float: left;
+						}
+					}
+					.time, .marker {
+						width: 100%;
+						clear: both;
+						div {
+							float: left;
+							width: 25px;
+							&.two {
+								height: 50px;
+							}
+						}
+					}
+					img {
+						width: 20px;
+					}
+				}
+				.tags {
+					width: 100%;
+					display: table;
+					margin-bottom: 5px;
+					li {
+						float: left;
+						color: $pink;
+						margin: 3px 3px 0 0;
+						padding: 2px 8px 0;
+	    				font-size: 12px;
+						list-style: none;
+						border-radius: 5px;
+						border: 1px solid $pink;
+						&.block {
+							color: #fff;
+							background-color: $pink;
+						}
+					}
+				}
+				.info {
+					width: 100%;
+					display: table;
+					clear: both;
+					.container {
+						max-width: 750px;
+						padding: 0;
+					}
+					.panel-title>a {
+						color: $skyblue;
+					}
+					.panel-title>a.collapsed {
+						color: #fff;
+					    background: $skyblue;
+					}
+					.panel-default {
+						margin-top: 5px;
+						border-radius: 0;
+					    border-color: $skyblue;
+					}
+					.panel-default>.panel-heading+.panel-collapse>.panel-body {
+					    border-top-color: #6599ff;
+					}
+					table {
+						margin: 0 auto;
+						&.nd {
+							margin-top: 10px;
+						}
+						th {
+						    width: 150px;
+						    font-size: 20px;
+						    border-top: 0;
+						}
+						tr {
+							border-top: 1px solid;
+							&.noborder {
+								border:0;
+							}
+							&:last-child {
+								border-bottom: 1px solid;
+							}
+							td {
+								padding: 5px;
+								border-right: 1px solid;
+								&:first-child {
+									width: 80px;
+									background-color: $lightgrey;
+								}
+								&:last-child {
+									border-right: none;
+								}
+							}
+						}
+					}
+					.buttons {
+						margin-top: 10px;
+						a {
+							color: #fff;
+							width: 47%;
+							float: left;
+							margin: 4px;
+							font-size: 12px;
+							padding: 5px 6px;
+							text-align: center;
+							border-radius: 3px;
+							&.blue {
+								background-color: $skyblue;
+							}
+							&.pink {
+								background-color: $pink;
+								img {
+									width: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/***********
+ MY PAGE
+***********/
+
+.mypage {
+	.sec1 {
+		top: 0;
+		left: 0;
+		color: #fff;
+		z-index: 800;
+		position: fixed;
+	    margin-top: 90px;
+	    width: 100%;
+	    font-size: 20px;
+	    padding: 10px 15px;
+	    background: $black;
+	    .wrapper {
+	    	max-width: 750px;
+	    	margin: 0 auto;
+	    }
+	    span {
+	    	padding-top: 10px;
+		    float: left;
+		    display: inline-block;
+	    }
+	}
+	.sec2 {
+		width: 100%;
+		display: table;
+		margin-top: 80px;
+		padding: 0 15px 40px;
+	}
+	.tab-pane {
+		p {
+			font-weight: 600;
+		}
+	}
+	.tab-content {
+		color: #000;
+		min-height: 150px;
+    	background-color: transparent;
+	}
+	.nav {
+		float: right;
+    	max-width: 130px;
+	}
+	.nav-pills > li > a {
+		border-radius: 0;
+	}
+	.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	    color: #fff;
+	    background-color: transparent;
+	}
+	.nav-pills>li.active::after {
+		content: "\25b2";
+	    color: #fff;
+	    font-size: 24px;
+	    margin-left: 8px;
+	    margin-top: -6px;
+	    padding: 0;
+	    font-weight: 700;
+	    position: absolute;
+	}
+	.nav>li>a{
+		padding: 0 2px;
+	}
+	.nav>li>a:focus, .nav>li>a:hover {
+	    background-color: transparent;
+	}
+	.nav>li>a>img {
+	 	max-width: 35px;
+	}
+	.notif-area {
+		color: $grey;
+		border: 1px solid $grey;
+		padding: 10px;
+		min-height: 280px;
+	}
+	.seemore-blue2 {
+		width: 160px;
+	    font-size: 15px;
+	    text-align: center;
+		img {
+			width: 20px;
+			float: left;
+			margin-left: 22px;
+		}
+	}
+	.regform {
+		div {
+			label {
+				font-weight: 600;
+				small {
+					float: right;
+				    font-size: 11px;
+				    padding-top: 5px;
+				    font-weight: normal;
+				}
+			}
+		}
+		span {
+			font-weight: 600;
+		}
+		.radio {
+			width: 90px;
+		    float: left;
+		    border: 1px solid #757575;
+		    margin: 0 5px 10px;
+		    background-color: #fff;
+			label {
+				margin: 9px 0 6px;
+			    font-weight: 400;
+			    line-height: 18px;
+			    padding-left: 38px;
+			}
+			input {
+				outline: 0;
+				cursor: pointer;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				border: 5px solid $lightgrey;
+				border-radius: 50%;
+				width: 21px;
+				height: 21px;
+				float: left;
+				padding-left: -20px;
+				margin-top: -2px;
+				margin-left: -33px;
+				background-color: $lightgrey;
+			}
+			span {
+				color: #000;
+			}
+		}
+		input[type=radio]:checked {
+		    width: 23px;
+		    height: 23px;
+		    border-color: red!important;
+		    background-color: #fff!important;
+		}
+		div {
+			.full {
+			    max-width: 280px;
+			    select {
+				    width: 100%;
+				    padding: 0 5px;
+				    margin-bottom: 4px;
+				}
+			}
+			.half {
+			    max-width: 280px;
+			    select {
+			    	&:first-child {
+					    padding: 0 5px;
+					    margin-right: 5px;
+					}
+				    width: 49%;
+				    float: left;
+				}
+			}
+		}
+		.form-indent {
+			padding-left: 20px;
+			&.first {
+				input {
+					width: 97%;
+				}
+			}
+			span {
+				width: 45px;
+				font-weight: 500;
+				padding-right: 2px;
+				text-align: right;
+			}
+			input {
+				width: 95%;
+			}
+		}
+		p {
+			margin-top: 20px;
+			span {
+				color: #000;
+				border-bottom: 2px solid;
+			}
+		}
+		label {
+			color: #000;
+			width: 100%;
+			margin-top: 5px;
+			font-weight: 500;
+		}
+		select {
+			background: url(../images/select-arrow.png) right no-repeat #fff;
+		    background-size: 30px;
+		    display: inline-block;
+		    position: relative;
+		    -moz-appearance: none;
+		    -webkit-appearance: none;
+		    appearance: none;
+		}
+		input, select {
+			width: 100%;
+			height:35px;
+			padding: 5px;
+			color: #808080;
+			font-size: 15px;
+			padding: 3px;
+			border: 1px solid;
+			margin-bottom: 5px;
+			background-color: #fff;
+		}
+	}
+	.seemore-pink {
+		margin-top: 20px;
+		border: 0;
+		cursor: pointer;
+		max-width: 120px;
+		color: #fff !important;
+		background-color: #E73B7B !important;
+	}
+	.jobs {
+			.job {
+				padding-top: 15px;	
+				display: table;
+				border-bottom: 1px solid;
+				&:last-child {
+					border-bottom:0;
+				}
+				.pin {
+					min-width: 70px;
+					padding: 2px 6px;
+					float: left;
+					text-align: center;
+					&.yellow {
+						background-color: $darkyellow;
+					}
+					&.green {
+						background-color: rgb(162, 228, 135);
+					}
+				}
+				.num {
+					float: right;
+					font-size: 12px;
+					padding: 3px 5px;
+					border-radius: 10px;
+					border: 1px solid;
+					text-align: center;
+				}
+				.title {
+					width: 100%;
+					clear: both;
+					display: block;
+					font-size: 20px;
+					font-weight: 600;
+					padding: 3px 0 0;
+					span {
+						color: #000;
+					    padding: 6px;
+					    font-weight: 500;
+					    border-radius: 0;
+					    background-color: #ffd801;
+					}
+				}
+				.full {
+					width: 100%;
+					font-size: 16px;
+					font-weight: normal;
+					img {
+						width: 20px;
+					}
+					.yen {
+						width: 100%;
+						div {
+							width: 30px;
+						    height: 50px;
+						    float: left;
+						}
+					}
+					.time, .marker {
+						width: 100%;
+						clear: both;
+						div {
+							float: left;
+							width: 25px;
+							&.two {
+								height: 50px;
+							}
+						}
+					}
+				}
+				.left {
+					width: 55%;
+					float: left;
+					img {
+						width: 100%;
+					}
+				}
+				.right {
+					width: 45%;
+					float: left;
+					padding: 5px;
+					font-size: 18px;
+					.subtitle {
+						font-size: 18px;
+						font-weight: bold;
+					}
+					.yen {
+						width: 100%;
+						div {
+							width: 30px;
+						    height: 50px;
+						    float: left;
+						}
+					}
+					.time, .marker {
+						width: 100%;
+						clear: both;
+						div {
+							float: left;
+							width: 25px;
+							&.two {
+								height: 50px;
+							}
+						}
+					}
+					img {
+						width: 20px;
+					}
+				}
+				.tags {
+					width: 100%;
+					display: table;
+					margin-bottom: 5px;
+					li {
+						float: left;
+						color: $pink;
+						margin: 3px 3px 0 0;
+						padding: 2px 8px 0;
+	    				font-size: 12px;
+						list-style: none;
+						border-radius: 5px;
+						border: 1px solid $pink;
+						&.block {
+							color: #fff;
+							background-color: $pink;
+						}
+					}
+				}
+				.info {
+					width: 100%;
+					display: table;
+					clear: both;
+					.container {
+						padding: 0;
+					}
+					.panel-title>a {
+						color: $skyblue;
+					}
+					.panel-title>a.collapsed {
+						color: #fff;
+					    background: $skyblue;
+					}
+					.panel-default {
+						margin-top: 5px;
+						border-radius: 0;
+					    border-color: $skyblue;
+					}
+					.panel-default>.panel-heading+.panel-collapse>.panel-body {
+					    border-top-color: #6599ff;
+					}
+					table {
+						&.nd {
+							margin-top: 10px;
+						}
+						th {
+						    width: 150px;
+						    font-size: 20px;
+						    border-top: 0;
+						}
+						tr {
+							border-top: 1px solid;
+							&.noborder {
+								border:0;
+							}
+							&:last-child {
+								border-bottom: 1px solid;
+							}
+							td {
+								padding: 5px;
+								border-right: 1px solid;
+								&:first-child {
+									width: 80px;
+									background-color: $lightgrey;
+								}
+								&:last-child {
+									border-right: none;
+								}
+							}
+						}
+					}
+					.buttons {
+						margin-top: 10px;
+						a {
+							color: #fff;
+							width: 47%;
+							float: left;
+							margin: 4px;
+							font-size: 12px;
+							padding: 5px 6px;
+							text-align: center;
+							border-radius: 3px;
+							&.blue {
+								background-color: $skyblue;
+							}
+							&.pink {
+								background-color: $pink;
+								img {
+									width: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+}
+
+
+.courses2 {
+	.courses-list {
+		max-width: 750px;
+		margin: 0 auto;
+		.course {
+			padding-top: 100px;
+			.title {
+				padding: 5px;
+				font-size: 18px;
+				font-weight: 600;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				background-color: $lightpink2;
+			}
+			p {
+				padding: 5px;
+				overflow-wrap: break-word;
+			}
+			table {
+				width: 100%;
+				padding: 5px;
+				max-width: 400px;
+				margin-bottom: 10px;
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				tr{
+					td {
+						padding: 5px;
+						border-bottom: 1px solid;
+						&:first-child {
+							background-color: $lightgrey;
+						}
+					}
+				}
+			}
+			.seemore-blue {
+				background-color: $skyblue2;
+			}
+		}
+	}
+}
+
+
+
+.overlap-text {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -50px;
+	max-width: 650px;
+	background-color: #fff;
+	border: 1px solid $pink;
+	.desc {
+		span {
+			width: 100%;
+			float: none; 
+			display: block;
+			line-height: 35px;
+			text-align: center;
+		}
+	}
+}
+
+
+.infostatement {
+	h4 {
+		font-size: 20px;
+		font-weight: 600;
+		text-align: center;
+	}
+	section {
+	    padding-bottom: 100px;
+	    min-height: 400px;
+	}
+	.infostatement-box {
+		padding: 10px;
+		border: 1px solid #000;
+	}
+}
+
+.user-confirm {
+	h4 {
+		font-size: 20px;
+	    font-weight: 600;
+	    text-align: center;
+	    width: 85%;
+	    margin: 0 auto;
+	}
+	.seemore-pink {
+		width: 150px;
+		margin-top: 10px;
+	}
+	.seemore-blue {
+		margin-top: 30px;
+	}
+	section {
+	    padding-bottom: 100px;
+	    min-height: 400px;
+	}
+	hr {
+		border-top: 1px solid #615555;
+	}
+	form {
+		label {
+			width: 100%;
+		    font-size: 18px;
+		    margin-top: 10px;
+		}
+		input {
+			border: 0;
+		    width: 100%;
+		    color: #bbb6b6;
+		    padding: 10px;
+		    font-size: 18px;
+		    border-right: 1px solid #dad5d5;
+		    border-bottom: 1px solid #d2d2d2;
+		}
+	}
+	p {
+		font-size: 13px;
+		text-align: center;
+		span {
+			color: blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+.success {
+	section {
+		padding: 0 20px;
+		min-height: 200px;
+		&.sec6 {
+			padding-top: 20px !important;
+			padding-bottom: 50px;
+		}
+	}
+
+	h4 {
+		font-size: 24px;
+	    font-weight: 600;
+	    text-align: center;
+	    width: 85%;
+	    color: $bluegreen;
+	    margin: 0 auto;
+	}
+	span {
+		color: #000;
+		text-align: center;
+	}
+	.seemore-blue {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	p {
+		font-size: 16px;
+		word-break: break-all;
+		text-align: center;
+		span {
+			color: blue;
+			text-decoration: underline;
+		}
+	}
+}
+
+
+
+.takecourse {
+	.title {
+		width: 100%;
+		color: #fff;
+		padding: 5px;
+		font-size: 24px;
+		font-weight: 600;
+		text-align: center;
+		background-color: $bluegreen;
+	}
+	.sec8 {
+		padding: 0;
+		span {
+			&.pink {
+				color: $pink;
+				width: 100%;
+    			display: block;
+			}
+		}
+		.regform {
+			margin-top: 0;
+			> div {
+				width: 100%;
+				display: block;
+				&.radio {
+					width: 100% !important;
+					margin: 0 5px 10px 0;
+					label {
+    				font-size: 13px;
+    				font-weight: 600;
+    				}
+					&.two {
+					width: 130px !important
+					
+					}
+				}
+				.form-indent {
+					span {
+						width: 35px;
+						text-align: right;
+    					padding-right: 3px;
+					}
+					input {
+						width: 95%;
+					}
+				}
+				label {
+					font-weight: 600;
+				}
+			}
+			p {
+				clear: both;
+			}
+			.seemore-pink {
+				clear: both;
+				background-color: #E73B7B;
+			    width: 150px;
+			    padding: 2px 9px;
+			    font-size: 16px;
+			}
+			.blankspace {
+				width: 100%;
+				height: 15px;
+    			clear: both;
+			}
+		}
+	}
+}
+
+
+
+
+footer {
+	color: #fff;
+    padding: 0 0 10px;
+    text-align: center;
+	
+	.sticky-chat {
+		width: 100%;
+		padding: 30px 20px;
+		display: table;
+		transition: all 0.5s;
+		background-color: #fff;
+		&.fixed {
+			bottom: 0;
+			width: 100%;
+			padding: 15px;
+			/*-webkit-box-shadow: -1px -1px 5px 0px rgb(144, 138, 144);
+		    -moz-box-shadow: -1px -1px 5px 0px rgba(92,87,92,1);
+		    box-shadow: -1px -1px 5px 0px rgb(183, 183, 183);*/
+		}
+		&.return-only {
+			background-color: transparent;
+			padding: 0 20px;
+			box-shadow: none;
+			button {
+				display: none;
+			}
+			.return-to-top {
+				margin-top: -45px;
+			}
+		}
+		button {
+			color: #fff;
+			border: 0;
+			float: left;
+			padding: 5px 10px;
+			background-color: $pink;
+			img {
+				width: 25px;
+			}
+		}
+		.return-to-top {
+			width: 35px;
+		    height: 35px;
+		    float: right;
+		    color: #fff;
+		    cursor: pointer;
+		    transition: all 0.5s;
+		    background-color: $pink;
+		    border-radius: 50%;
+		    &:hover {
+		    	background-color: transparent;
+		    	border: 1px solid $pink;
+		    	color: $pink;
+		    }
+		}
+
+	}
+	.foot-bg {
+		width: 100%;
+		background-color: $black2;
+		.sns {
+			max-width: 255px;
+		    display: block;
+		    margin: 0 auto;
+		    padding: 10px 0;
+			img {
+				width: 60px;
+			    padding: 5px;
+			    margin: 0 auto;
+			}
+		}
+		ul {
+			padding-left: 0;
+		    width: 100%;
+		    max-width: 350px;
+		    display: table;
+		    margin: 0 auto;
+			li {
+				list-style: none;
+			    width: 25%;
+			    float: left;
+			    font-size: 10px;
+			    text-align: center;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 480px) {
+	.page {
+		display: block;
+	}
+	.closenav {
+		height: 120px;
+	}
+	.courses2 {
+		margin-top: 60px;
+	}
+	h3 {
+	    font-size: 25px !important;
+	}
+	header .wrapper {
+	    padding: 1px;
+	}
+	header .wrapper .left nav {
+	    width: 45%;
+	}
+	header .wrapper .left ul li a {
+	    padding: 5px;
+	    font-size: 10px;
+	}
+	header .wrapper .left p {
+	    margin: 0;
+	    font-size: 10px;
+	}
+	header .wrapper .left img {
+	    max-width: 200px;
+	}
+	header .wrapper .left ul {
+	    padding: 10px 0 0;
+	}
+	header .wrapper .logo-title span {
+		display: block;
+	}
+	header .wrapper .right .reglink {
+	    font-size: 10px;
+	}
+	header .wrapper .right .reglink button {
+	    font-size: 14px;
+	    padding: 5px 12px;
+	}
+	header .wrapper .right .reglink a {
+	    font-size: 14px;
+	    padding: 6px 15px;
+	}
+	header .head-bg .links .latest {
+	    margin-top: 20px;
+	}
+	.main-slider {
+	    margin-top: 0;
+	}
+	.carousel, .carousel-inner {
+	    height: 220px;
+	}
+	.carousel-inner .item {
+	    height: 220px!important;
+	}
+	.carousel-inner .item .caption {
+	    padding: 5px;
+	    font-size: 14px;
+	}
+	.carousel-indicators {
+	    bottom: -28px;
+	}
+	a.carousel-control {
+	    width: 10%;
+	}
+	.sec1 .pick-ups .picks {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+	.sec1 .pick-ups .picks .title{
+	    font-size: 14px;
+	    padding: 5px 0px;
+	}
+	.sec1 .pick-ups .picks .right img {
+		width: 20px;
+		margin-right: 2px;
+	}
+	.sec1 .pick-ups .picks .right .subtitle
+	 {
+	    font-size: 11px;
+	}
+	.sec1 .pick-ups .picks .right .marker,
+	.sec1 .pick-ups .picks .right .yen,
+	.sec1 .pick-ups .picks .right .time
+	 {
+	    font-size: 13px;
+	}
+	.sec1 .pick-ups .picks .right .yen div {
+	    width: 20px;
+	    height: 35px;
+	}
+	.sec1 .pick-ups .picks .right .time div {
+		width: 22px;
+	    height: 35px;
+	}
+	.sec5 .weekly .week .day {
+	    padding: 10px;
+	}
+	.sec5 .weekly .week {
+    	max-width: 100%;
+    }
+    .sec5 .weekly .week .blocks .block .right .name {
+	    font-size: 13px;
+	}
+	.sec7 .lifestyle .lifes p {
+	    margin-top: 0;
+	}
+	.sticky-chat.fixed {
+		position: fixed;
+	}
+	nav.mobile .left .buttons {
+	    width: 100%;
+	}
+	.sec8 .regform>div .form-indent input {
+	    width: 93%;
+	}
+	.contactus .sec1 h2 {
+	    font-size: 20px;
+	}
+	.contactus .sec8 .regform .form-indent div span {
+	    width: 60px;
+	}
+	.contactus .sec8 .regform .form-indent div input {
+	    width: 80%;
+	}
+	.contactus .sec8 .regform .form-indent span {
+	    width: 70px;
+	}
+	.contactus .sec8 .regform .form-indent input {
+	    width: 77%;
+	}
+	.mypage .sec1 {
+	    margin-top: 120px;
+	}
+	.sidenav {
+		margin-top: 110px;
+	}
+	.mypage .regform .form-indent input {
+	    width: 90%;
+	}
+	.sec3 .points .mergetext {
+	    margin-top: -7px;
+	}
+	header {
+		position: fixed;
+	}
+	.mypage .sec2 {
+	    margin-top: 210px;
+	}
+	.joboffer .sec1 {
+	    margin-top: 68px;
+	}
+	.sec2 .jobs {
+	    margin-top: 120px;
+	}
+	.courses2 .courses-list .course {
+	    padding-top: 70px;
+	}
+	.joboffer .sec2 {
+    	padding: 0 15px;
+	}
+	.carousel-inner .item img {
+	    width: auto;
+	    min-height: 160px;
+	}
+	.infostatement section, .user-confirm section {
+		padding-top: 150px; 
+	}
+	.takecourse .sec8 {
+	    margin-top: 125px;
+	}
+	.takecourse .sec8 .regform>div .form-indent input {
+	    width: 89%;
+	}
+	.sec8 .regform>div.radio {
+	    width: 98% !important;
+	}
+}
+
+@media (max-width: 378px) {
+
+}
+
+
+
+@media (max-width: 320px) {
+    nav.mobile p {
+        width: 82%;
+        height: 100%;
+        float: left;
+        font-size: 10px;
+    }
+}
+

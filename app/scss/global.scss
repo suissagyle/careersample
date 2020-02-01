@@ -1,0 +1,586 @@
+@import "mixins";
+@import "colors";
+@import "variables";
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
+@import '_css/_animate.css';
+
+@font-face { font-family: Avenir; 
+			 src: url('../fonts/AvenirLTStd-Light.woff'); }
+
+
+
+body { font-family: "Avenir", sans-serif; font-weight:light; font-style:normal;}
+a { text-decoration: none !important; cursor: pointer !important;}
+img { width: 100%; }
+.tred {color: $red;}
+.left, .right { float: left; }
+fieldset {
+		padding: .35em .625em .75em !important;
+    margin: 0 2px !important;
+    border: 1px solid #000 !important;
+}
+.left, .right { width: 50%;float: left; }
+
+header {
+	width: 100%; 
+	top: 0;
+	left: 0;
+	z-index: 999;
+  max-width: 750px;
+  margin:0 auto;
+	background-color: #fff;
+	.wrapper {
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+    position: relative;
+    display: table;
+		.left {
+			width: 80%;
+			float: left;
+      padding-left: 5px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      p {
+        margin: 0;
+        font-size: 12px;
+
+      }
+			img {
+				width: 100%;
+				max-width: 230px;
+			}
+       nav {
+        width: 30%;
+        float: right;
+      }
+      
+      ul {
+        float: right;
+        max-width: 200px;
+        margin: 0;
+        padding: 0;
+        padding-top: 15px;
+        li {
+          display: table;
+          position: relative;
+          float: left;
+          list-style: none;
+          text-align: center;
+          &:last-child {
+            a {
+              border-right: 0;
+            }
+          }
+          a {
+            color: #000;
+            height: 20px;
+            bottom: 0;
+            padding: 5px 8px;
+            font-size: 11px;
+            cursor: pointer;
+            border-right: 2px solid;
+            text-decoration: none;
+          }
+        }
+      }
+	}
+	.right {
+		width: 20%;
+		float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+			
+		}
+    
+	}
+  
+}
+
+.head-bg {
+    max-width: 750px;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 110px;
+    img {
+      width: 100%;
+    }
+    .links {
+      padding: 25px 20px;
+      a {
+        display: block;
+      }
+      .latest {
+        margin-top: 50px;
+      }
+
+    }
+  }
+
+section {
+	padding: 20px 15px;
+}
+
+.page {
+  width: 100%;
+  display: table;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+nav {
+	&.mobile {
+    /*display: none;*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+    background-color: #fff;
+    .wrapper {
+      max-width: 750px;
+      height: 90px;
+      margin: 0 auto;
+      display: block;
+      .right {
+        padding: 0;
+      }
+    }
+    .left {
+	  	width: 90%;
+	    float: left;
+	    padding: 8px 15px;
+      .reglink {
+        width: 100%;
+        float: left;
+        margin-top: -19px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12px;
+        span {
+          width: 100%;
+          display: block;
+          line-height: 31px;
+        }
+        a {
+          color: #fff;
+          font-size: 14px;    
+          padding: 7px 20px;
+          border-radius: 3px;
+          text-decoration: none;
+          background-color: $pink;
+          border-color: $pink;
+        }
+      }
+	  	img {
+        float: left;
+	  		cursor: pointer;
+	  		max-width: 185px; 
+	  	}
+      .buttons {
+        width: 400px;
+        float: right;
+        .left {
+          width: 62%;
+          padding: 5px;
+          padding-left: 0;
+          padding-top: 5px;
+          span {
+            width: 100%;
+            display: block;
+            font-size: 11px;
+            text-align: center;
+          }
+          a {
+            color: #fff;
+            padding: 5px;
+            margin-top: 2px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background-color: $bluegreen;
+          }
+        }
+        .right {
+          width: 32%;
+        }
+      }
+	  }
+	  .right {
+	  	width: 10%;
+	  	float: left;
+	  }
+    p {
+      width: 100%;
+      height: 100%;
+      float: left;
+      font-size: 11px;
+      color: #000;
+      margin: 0;
+      text-align: left;
+    }
+    .navbar-nav {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      display: block;
+      background-color: #fff;
+      li {
+        width: 100%;
+        border-bottom: 2px solid;
+        a {
+          font-size: 14px;
+          display: block;
+          color: #000;
+          font-weight: 500;
+          text-align: left;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/**************
+    SIDENAV
+***************/
+
+.wrap-sidenav {
+  display: none;
+  top: 0;
+  width: 100%;
+  max-width: 750px;
+  height: 90px;
+  z-index: 999;
+  position: fixed;
+}
+.sidenav {
+  top: 0;
+  left: 150%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 850;
+  margin-top: 80px;
+  -webkit-transform: translate3d(0,0,0);
+  background-color: transparent;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: transparent;
+    li {
+      list-style: none;
+      width: 100%;
+      padding-left: 20px;
+      background-color: $pink;
+      transition: all 0.5s;
+      span {
+        font-size: 18px;
+      }
+      &.first {
+        padding-top: 10px;
+      	height: 0;
+        background-color: transparent;
+      }
+      &:hover {
+        background-color: #fff;
+        color: $pink !important;
+      }
+      &.active {
+        /*@include BGcolor2;*/
+        a {
+          color: #fff;
+          font-size: 12px;
+        }
+      }
+      a {
+        font-size: 14px;
+        display: block;
+        color: #fff;
+        padding: 5px;
+        transition: all 0.5s;
+        font-weight: 500;
+        cursor: pointer;
+        text-align: left;
+        text-decoration: none;
+        &:hover {
+          color: $pink !important;
+        }
+        img {
+          width: 25px;
+          &.circle {
+            width: 250px;
+          }
+        }
+        &:first-child {
+          padding: 5px;
+        }
+      }
+      &:last-child {
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+.closenav {
+    width: 100%;
+    display: none;
+    height: 90px;
+    max-width: 50px;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    padding: 11px;
+    cursor: pointer;
+    position: absolute;
+    -webkit-transform: translate3d(0,0,0);
+    background-color: $pink;
+    img {
+      width: 28px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    span {
+      color: #4a412c;
+      font-size: 26px;
+    }
+  }
+
+/****************
+   CANVAS
+****************/
+.canvas {
+  width: 50px;
+  height: 100%;
+  float: right;
+  padding: 8px 0;
+  display: block;
+  cursor: pointer;
+  span {
+    color: $bluegreen;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+/*************
+	SLIDER
+*************/
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    .carousel-control {
+      z-index: 2;
+      opacity: 1;
+    }
+    .item {
+      width: auto;
+      min-height: 468px;
+      height: 469px !important;
+      .caption {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        position: absolute; 
+        background-color: rgba(47, 37, 34, 0.77);
+        img {
+            width: 100%;
+            height: 469px !important;
+        }
+      }
+      img {
+        width: auto;
+        min-height: 468px;
+      }
+    }
+}
+/* Carousel Fading slide */
+
+.carousel-fade {
+  .carousel-inner {
+    background: #000;
+  }
+  .carousel-control {
+    z-index: 2;
+    opacity: 1;
+  }
+  .item {
+    opacity: 0;
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+
+  }
+  .next.left, .prev.right, .item.active {
+    opacity: 1;
+  }
+  .active {
+    &.left, &.right {
+      left: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+/* Safari Fix */
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item {
+    &.next, &.active.right, &.prev, &.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    &.next.left, &.prev.right, &.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+/* Carousel Control custom */
+
+.carousel-control {
+  .control-icon {
+    font-size: 48px;
+    height: 30px;
+    margin-top: -15px;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+  }
+  .prev {
+    margin-left: -15px;
+    left: 50%;
+  }
+  .next {
+    margin-right: -15px;
+    right: 50%;
+  }
+}
+
+/* Prev */
+/* Next */
+
+/* Removing BS background */
+
+.carousel .control-box {
+  /*opacity: 0;*/
+}
+
+a.carousel-control {
+  width: 5%;
+  opacity: 1;
+  &.left {
+    left: 0;
+    background: none;
+    border: 0;
+  }
+  &.right {
+    right: 0;
+    background: none;
+    border: 0;
+  }
+  .control-icon {
+    font-size: 35px;
+  }
+}
+
+/* Animation */
+
+.control-box, a.carousel-control, .carousel-indicators li {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -o-transition: all 250ms ease;
+  transition: all 250ms ease;
+  /* hardware acceleration causes Bootstrap carousel controlbox margin error in webkit */
+  /* Assigning animation to indicator li will make slides flicker */
+}
+
+/* Hover animation */
+
+.carousel:hover {
+  .control-box {
+    opacity: 1;
+  }
+  a.carousel-control {
+    &.left {
+      left: 15px;
+    }
+    &.right {
+      right: 15px;
+    }
+  }
+}
+
+.carousel-inner .item,
+.carousel-inner .item.active,
+.carousel-inner .item img {
+    margin: auto;
+    padding: 0px;
+}
+
+/* Carouse Indicator */
+
+.carousel-indicators {
+  bottom: -10px;
+  margin-bottom: 0;
+  li {
+    border: 0;
+    background: #fff;
+    margin: 0 3px;
+    width: 15px;
+    height: 15px;
+      &.active {
+        border: 0;
+        background: $pink;
+        margin: 0 3px;
+        width: 15px;
+       height: 15px;
+      }
+  }
+}
+.foot-img {
+	width: 100%;
+	display: table;
+	padding: 5px 15px 0;
+	background-color: #fff;
+	img {
+		float: right;
+    margin-bottom: 2px;
+		max-width: 100px;
+	}
+}
+
+

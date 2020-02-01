@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Dashboard - Preferences</title>
+		<META NAME="ROBOTS" CONTENT="INDEX, NOFOLLOW">
+		<meta name="The Class" content="The Class">
+		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+		<!-- <link rel="icon" href="../images/favicon.ico" type="image/x-icon"> -->
+		<link href="../css/animate.css" rel="stylesheet">
+		<link href="../css/dashboard.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/wow.min.js"></script>
+		<script>
+	     wow = new WOW(
+            {
+              boxClass:     'wow',      // default
+              animateClass: 'animated', // default
+              offset:       0,          // default
+              mobile:       true,       // default
+              live:         true        // default
+            }
+          )
+	     console.log("wow start");
+	    </script>
+</head>
+<body class="dashboardthis admin-bg" id="admin">
+	<div class="body-container">
+		<!-- START HEAD CONTAINER -->
+		<div class="head-container">
+			<header>
+				<div class="left">
+					<img src="../images/dashboard-logo.png" alt="">
+				</div>
+				<div class="center">
+					<div class="searchContainer">
+					  <i class="fa fa-search searchIcon"></i>
+					  <input class="searchBox" type="search" name="search" placeholder="Search">
+					</div>
+				</div>
+				<div class="right">
+					<div class="account-here">
+						<small>中村花子</small>
+						<img src="../images/avatar-icon.png" alt="">
+					</div>
+				</div>
+				<div class="border">
+					<div class="border-container"></div>
+				</div>
+				<div class="msg">
+					<p><span>公開速報</span>
+					2019/07/22 新着求人情報が公開されました！</p>
+				</div>
+			</header>	
+		</div>
+		<!-- END HEAD CONTAINER -->
+		<!-- START NAV CONTAINER -->
+		<div class="nav-container">
+			<nav class="clearfix">
+				<div class="navy">
+					<ul>
+						<li><a href="dashboard-admin.html"><span class="icon icon1"></span><span>ホーム</span></a></li>
+						<li><a href="my-data.html"><span class="icon icon2"></span><span>マイデータ</span></a></li>
+						<li class="active"><a href="condition-list.html"><span class="icon icon3"></span><span>希望条件一覧</span></a></li>
+						<li><a href="skill-test.html"><span class="icon icon4"></span><span>スキルテスト</span></a></li>
+						<li><a href="salary-simulation.html"><span class="icon icon5"></span><span>給料シュミレーション</span></a></li>
+						<li><a href="salary-details.html"><span class="icon icon7"></span><span>マージン<br>シュミレーション</span></a></li>
+						<li><a href="apply.html"><span class="icon icon8"></span><span>勤怠管理</span></a></li>
+						<li><a href="documents.html"><span class="icon icon9"></span><span>労務書類・社会保険等</span></a></li>
+						<li><a href="document-list.html"><span class="icon icon11"></span><span>キャリアダイレクト<br>書類一覧</span></a></li>
+						<li><a href="company-documents.html"><span class="icon icon12"></span><span>企業様書類一覧</span></a></li>
+						<li><a href="contact-report.html"><span class="icon icon13"></span><span>キャリアダイレクト<br>担当者レポート</span></a></li>
+						<li><a href="evaluation.html"><span class="icon icon14"></span><span>企業様担当者評価</span></a></li>
+						<li><a href="company-clip.html"><span class="icon icon15"></span><span>マイ企業クリップ</span></a></li>
+						<li><a href="training.html"><span class="icon icon10"></span><span>キャリアアップ研修</span></a></li>
+						<li><a href="job-info.html"><span class="icon icon16"></span><span>求人情報管理</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- END NAV CONTAINER -->
+		<!-- START BODY CONTAINER -->
+		<div class="content-container">
+			<div class="shadow-wrapper">
+				<div class="form-container">
+					
+					<!-- START My DATA FORM -->
+					<div class="form-header">
+						<title>希望条件一覧</title>
+						<div class="dates">
+							<div class="created"><img src="../images/created-icon.png">作成日 <input type="text" name="" placeholder="2019.07.05"></div>
+							<div class="updated"><img src="../images/updated-icon.png">更新日 <input type="text" name="" placeholder="2019.07.20"></div>
+						</div>
+					</div>
+					<div class="form-subheader">
+						<p>web上で公開されません。当社が定める<span>個人情報保護方針</span>に則って厳重に保管いたします。</p>
+						<!-- <a href="">情報を変更する</a> -->
+					</div>
+					<div class="form-field">
+						<form>
+							<div class="jobshere">
+								<div class="addjobs">
+									<div>
+										<label>第一希望<br>職種カテゴリー</label>
+										<select id="jobcat" class="full" name="">
+											<optgroup label="">
+												<option value="">選択してください</option>
+												<option value="a1">プルダウンで選択</option>
+												<option value="a2">IT・エンジニアリング系</option>
+												<option value="a3">クリエイティブ系</option>
+												<option value="a4">営業</option>
+												<option value="a5">講師</option>
+												<option value="a6">保育士</option>
+												<option value="a7">通訳・翻訳</option>
+												<option value="a8">事務</option>
+											</optgroup>
+										</select>
+									</div>
+									<div>
+										<label>職種</label>
+										<select id="joblist" class="full" name="">
+											<optgroup label="">
+												<option value="">選択してください</option>
+												
+											</optgroup>
+										</select>
+									</div>
+								</div>
+								<span id="addmorejob" class="lnr lnr-plus-circle"></span>
+							</div>
+							
+							<br><br>
+							<div>
+								<label>最寄駅</label>
+								<input type="text" name="" placeholder="JR東海道本線">
+							</div>
+							<div>
+								<label>勤務地（第一希望）</label>
+								<input type="text" name="" placeholder="名古屋市名駅">
+							</div>
+							<div>
+								<label>勤務地（第二希望）</label>
+								<input type="text" name="" placeholder="名古屋市中区栄">
+							</div>
+							<div>
+								<label>勤務地（第三希望）</label>
+								<input type="text" name="" placeholder="地下鉄東山線沿線">
+							</div>
+							<div>
+								<label>就業期間</label>
+								<select class="full" name="">
+									<optgroup label="">
+										<option value="">選択してください</option>
+										<option value="">時短勤務（3時間〜）</option>
+										<option value="">単発（1〜1週間）</option>
+										<option value="">短期（1週間〜1ヶ月）</option>
+										<option value="">長期（2ヶ月〜）</option>
+									</optgroup>
+								</select>
+							</div>
+
+
+							<div class="short-rads">
+								<label>就業可能曜日<br>（選択してください）</label>
+								<div class="radio">
+							      <label><input type="radio" name="optradio1a" checked>月曜</label>
+							    </div>
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1b" checked>火曜</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1c" checked>水曜</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1d" checked>木曜</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1e" checked>金曜</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1f">土曜</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio1g">日曜</label>
+							    </div>	
+							</div>
+							<div class="medium-rads">
+								<label>就業開始可能日<br>（選択してください）</label>
+								<div class="radio">
+							      <label><input type="radio" name="optradio2a" checked>即日</label>
+							    </div>
+							    <div class="radio">
+							      <label><input type="radio" name="optradio2a" >1週間後</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio2a" >1ヶ月後</label>
+							    </div>	
+							    <div class="radio">
+							      <label><input type="radio" name="optradio2a" >その他</label>
+							    </div>	
+							    <input type="text" name="" placeholder="ご記入ください">
+							</div>
+							
+							<div class="short-inputs">
+								<label>就業時間</label>
+								<input type="text" name="" placeholder="9：00"> ~
+								<input type="text" name="" placeholder="16：00">
+							</div>
+							<div class="med-inputs">
+								<label>時給</label>
+								<input type="text" name="" placeholder="1,500円〜">
+							</div>
+							<div class="full-rads">
+								<label>扶養枠内勤務を</label>
+								<div class="radio">
+							      <label><input type="radio" name="optradio3a" >希望する</label>
+							    </div>
+							    <div class="radio">
+							      <label><input type="radio" name="optradio3a" checked>希望しない</label>
+							    </div>	
+							</div>
+							<div class="full-rads">
+								<label>休日出勤</label>
+								<div class="radio">
+							      <label><input type="radio" name="optradio4a" >希望する</label>
+							    </div>
+							    <div class="radio">
+							      <label><input type="radio" name="optradio4a" checked>希望しない</label>
+							    </div>	
+							</div>
+							<div class="full-rads2">
+								<label>残業</label>
+								<div class="white-rads">
+									<div class="radio">
+								      <label><input type="radio" name="optradio4a" >出来る  月/10時間以内</label>
+								    </div>
+								    <div class="radio">
+								      <label><input type="radio" name="optradio4a" checked>出来る  月/20時間〜</label>
+								    </div>	
+								</div>
+								<div class="radio">
+							      	<label><input type="radio" name="optradio4a" checked>出来ない</label>
+							    </div>	
+							</div>
+							<div class="full-rads">
+								<label>自動車通勤</label>
+								<div class="radio">
+							      <label><input type="radio" name="optradio4a" >希望する</label>
+							    </div>
+							    <div class="radio">
+							      <label><input type="radio" name="optradio4a" checked>希望しない</label>
+							    </div>	
+							</div>
+								
+							<div class="indent-form">
+								<h2>希望する働き方</h2>
+								<div>
+									<label></label>
+									<input type="text" name="" placeholder="選択してください">
+								</div>
+								<h2>希望条件の優先順位</h2>
+								<div class="selects">
+									<div>
+										<label>第1条件</label>
+										<select  name="">
+											<optgroup label="">
+												<option value="">選択してください</option>
+												<option value="">給与</option>
+												<option value="">勤務地</option>
+												<option value="">勤務時間</option>
+											</optgroup>
+										</select>
+									</div>
+									<div>
+										<label>第2条件</label>
+										<select  name="">
+											<optgroup label="">
+												<option value="">選択してください</option>
+												<option value="">給与</option>
+												<option value="">勤務地</option>
+												<option value="">勤務時間</option>
+											</optgroup>
+										</select>
+									</div>
+									<div>
+										<label>第3条件</label>
+										<select  name="">
+											<optgroup label="">
+												<option value="">選択してください</option>
+												<option value="">給与</option>
+												<option value="">勤務地</option>
+												<option value="">勤務時間</option>
+											</optgroup>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-subheader foot">
+								<a class="confirm-button" href="">入力を確認する</a>
+							</div>
+						</form>
+					</div>
+					<!-- END My DATA FORM -->
+
+				</div>
+				<footer>
+					<p>Copyrightⓒ ad-kit. All Rights Resereved. No reproduction without permission.</p>
+				</footer>
+			</div>
+
+		</div>
+		<!-- END BODY CONTAINER -->
+</div>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/custom.js"></script>
+</body>
+</html>
